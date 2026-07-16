@@ -2,12 +2,6 @@ import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-// import {
-//   ArrowRight,
-//   Truck,
-//   RefreshCw,
-//   BadgeCheck,
-// } from "lucide-react";
 
 const HomePage = () => {
   return (
@@ -19,7 +13,7 @@ const HomePage = () => {
         <Link href='/shop' className='custom-btn'>Shop Collection <ArrowRight /></Link>
       </section>
       <section className="order-1 lg:order-2">
-        <Image alt='banner image' src="https://images.pexels.com/photos/9594675/pexels-photo-9594675.jpeg" width={700} height={700} className='rounded-xl'></Image>
+        <Image alt='banner image' src="https://images.pexels.com/photos/9594675/pexels-photo-9594675.jpeg?w=600&q=80" width={700} height={700} className='rounded-xl'></Image>
       </section>
     </div>
   );

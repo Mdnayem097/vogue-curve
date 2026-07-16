@@ -5,7 +5,7 @@ import React from "react";
 const NavBar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar text-slate-900 shadow-sm bg-[#F8FAFC]">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -33,7 +33,7 @@ const NavBar = () => {
                 <Link href="/">Home</Link>
               </li>
               <li className="hover:text-amber-600 transition-colors">
-                <Link href="/shop">Shop</Link>
+                <Link href="/products">Shop</Link>
               </li>
               <li className="hover:text-amber-600 transition-colors">
                 <Link href="/newArrivals">New Arrivals</Link>
@@ -52,7 +52,7 @@ const NavBar = () => {
               <Link href="/">Home</Link>
             </li>
             <li className="hover:text-amber-600 transition-colors">
-              <Link href="/shop">Shop</Link>
+              <Link href="/products">Shop</Link>
             </li>
             <li className="hover:text-amber-600 transition-colors">
               <Link href="/newArrivals">New Arrivals</Link>
