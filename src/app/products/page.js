@@ -7,7 +7,7 @@ export default function ProductsPage() {
     <div className="min-h-screen bg-slate-50 py-12 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         
-        <h1 className="text-3xl font-extrabold text-slate-900 mb-8">
+        <h1 className="text-3xl font-extrabold text-slate-700 mb-8">
           Explore Our <span className="text-amber-600">Collections</span>
         </h1>
 
@@ -32,7 +32,7 @@ export default function ProductsPage() {
                   <span className="text-xs font-semibold text-amber-600 uppercase">
                     {product.category}
                   </span>
-                  <h2 className="text-lg font-bold text-slate-900 mt-1 line-clamp-1">
+                  <h2 className="text-lg font-bold text-slate-700 mt-1 line-clamp-1">
                     {product.name}
                   </h2>
                 </div>
