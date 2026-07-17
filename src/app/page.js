@@ -18,49 +18,88 @@ const HomePage = () => {
         </section>
       </div>
 
-      <div className='max-w-7xl mx-auto mt-16 px-4 md:px-8'>
-        <p className="inline-flex items-center gap-2 text-amber-600 font-semibold uppercase tracking-[0.2em] text-xs sm:text-sm mb-4">POPULAR CATEGORIES</p>
-        <div className='grid grid-cols-4 gap-3'>
-          <div>
+      <div className='max-w-7xl mx-auto mt-10 px-4 md:px-8'>
+        <p className="text-slate-900 font-semibold uppercase text-xs sm:text-sm mb-4">POPULAR CATEGORIES</p>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3'>
+          <div className="relative group overflow-hidden rounded-2xl aspect-square shadow-sm">
             <Image
-              src={'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?w=300&q=80'}
-              alt={'mens'}
+              src={'https://images.pexels.com/photos/34905444/pexels-photo-34905444.jpeg?w=300&q=80'}
+              alt={'Panjabi'}
               width={200}
               height={200}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
-            <p>Men's Wear</p>
+
+            <div className="absolute inset-0 cursor-pointer" />
+            <p className="absolute bottom-0 left-0 right-0 text-center font-semibold text-3xl md:text-base bg-slate-50 p-2">
+              Panjabi
+            </p>
           </div>
-          <div>
+          <div className="relative group overflow-hidden rounded-2xl aspect-square shadow-sm">
             <Image
-              src={'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?w=300&q=80'}
-              alt={'mens'}
+              src={'https://images.pexels.com/photos/38246571/pexels-photo-38246571.jpeg?w=300&q=80'}
+              alt={'Saree'}
               width={200}
               height={200}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
-            <p>Men's Wear</p>
+
+            <div className="absolute inset-0 cursor-pointer" />
+            <p className="absolute bottom-0 left-0 right-0 text-center font-semibold text-3xl md:text-base bg-slate-50 p-2">
+              Saree
+            </p>
           </div>
-          <div>
+          <div className="relative group overflow-hidden rounded-2xl aspect-square shadow-sm">
             <Image
-              src={'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?w=300&q=80'}
-              alt={'mens'}
+              src={'https://images.pexels.com/photos/37738043/pexels-photo-37738043.jpeg?w=300&q=80'}
+              alt={'Kurt'}
               width={200}
               height={200}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
-            <p>Men's Wear</p>
+
+            <div className="absolute inset-0 cursor-pointer" />
+            <p className="absolute bottom-0 left-0 right-0 text-center font-semibold text-3xl md:text-base bg-slate-50 p-2">
+              Kurt
+            </p>
           </div>
-          <div>
+          <div className="relative group overflow-hidden rounded-2xl aspect-square shadow-sm">
             <Image
-              src={'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?w=300&q=80'}
-              alt={'mens'}
+              src={'https://images.pexels.com/photos/9050627/pexels-photo-9050627.jpeg?w=300&q=80'}
+              alt={'Shirt'}
               width={200}
               height={200}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
-            <p>Men's Wear</p>
+
+            <div className="absolute inset-0 cursor-pointer" />
+            <p className="absolute bottom-0 left-0 right-0 text-center font-semibold text-3xl md:text-base bg-slate-50 p-2">
+              Shirt
+            </p>
           </div>
+        </div>
+      </div>
+
+      <div className='my-14 bg-slate-100 p-8 md:p-12 rounded-2xl flex flex-col lg:flex-row justify-between items-center gap-6 max-w-7xl mx-auto border border-slate-200/60'>
+        <div>
+          <p className='font-semibold text-2xl'>Get <span className='text-amber-600'>10% Off</span> Your First Order</p>
+          <p className='font-semibold text-slate-900'>Subscribe to our newsletter and never miss an update</p>
+        </div>
+        <div className="w-full max-w-md">
+          <form className="flex items-center w-full bg-white p-1.5 rounded-xl border border-slate-200 focus-within:border-slate-400 focus-within:ring-1 focus-within:ring-slate-400 transition-all shadow-sm">
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              required
+              className="w-full pl-3 pr-2 py-2 text-sm text-slate-800 bg-transparent placeholder-slate-400 outline-none border-none"
+            />
+            <button
+              type="submit"
+              className="custom-btn"
+            >
+              Subscribe
+            </button>
+          </form>
         </div>
       </div>
     </div>

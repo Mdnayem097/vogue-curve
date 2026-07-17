@@ -95,21 +95,21 @@ const SinglePage = ({ params }) => {
 
                 <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto mt-15 px-4 md:px-8">
                     <div className='flex items-center gap-3'>
-                        <Truck />
+                        <Truck className='text-slate-900'></Truck>
                         <div>
                             <p className='font-semibold text-slate-900'>Cash on Delivery</p>
                             <p className="text-slate-500">Available</p>
                         </div>
                     </div>
                     <div className='flex items-center gap-3'>
-                        <Truck />
+                        <Truck className='text-slate-900'></Truck>
                         <div>
                             <p className='font-semibold text-slate-900'>Free Shipping</p>
                             <p className="text-slate-500">On all orders</p>
                         </div>
                     </div>
                     <div className='flex items-center gap-3'>
-                        <Clock3 />
+                        <Clock3 className='text-slate-900'></Clock3>
                         <div>
                             <p className='font-semibold text-slate-900'>Easy Returns</p>
                             <p className="text-slate-500">30-dey return</p>
