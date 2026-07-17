@@ -24,5 +24,5 @@ Execute the following sequence to run the storefront repository locally.
 
 ### 1. Clone the project
 ```bash
-git clone [https://github.com/your-username/voguecurve.git](https://github.com/your-username/voguecurve.git)
+git clone https://github.com/Mdnayem097/vogue-curve
 cd voguecurve
