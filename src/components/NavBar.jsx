@@ -60,7 +60,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end pr-3">
-          <button><ShoppingCart/></button>
+          <Link href={'/cart'}><ShoppingCart/></Link>
         </div>
       </div>
     </div>

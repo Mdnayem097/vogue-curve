@@ -3,10 +3,12 @@ import React, { useState } from 'react';
 import { products } from "@/data/products";
 import Image from 'next/image';
 import { Check, Clock3, Truck } from 'lucide-react';
+import { useCart } from '@/context/CartContext';
 
 const SinglePage = ({ params }) => {
     const [selectedSize, setSelectedSize] = useState("");
     const [qty, setQty] = useState(1);
+    const { addToCart } = useCart();
     const resolvedParams = React.use(params);
     const productId = resolvedParams.id;
     const product = products.find((item) => item.id.toString() == productId);
@@ -86,7 +88,7 @@ const SinglePage = ({ params }) => {
                 <p className="text-slate-500 mt-4 leading-relaxed">{product.description}</p>
                 <p className='flex mt-6 gap-2 text-slate-500'><Check className='text-[#059669] font-bold'></Check> In Stock</p>
                 <div className="mt-8">
-                    <button className="custom-btn">
+                    <button className="custom-btn" onClick={() => addToCart(product, qty, selectedSize)}>
                         Add to Cart
                     </button>
                 </div>
